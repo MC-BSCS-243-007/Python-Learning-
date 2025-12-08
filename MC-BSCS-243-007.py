@@ -142,13 +142,99 @@ elif realage == fakeage :
 else :
     print("real age is :",realage)
 
-# Loops in python
-for i in range(5):
-    print("Iteration number:", i)
-count = 0
-while count < 5:
-    print("Count is:", count)
-    count += 1
+# # Loops in python
+# for i in range(5):
+#     print("Iteration number:", i)
+# count = 0
+# while count < 5:
+#     print("Count is:", count)
+#     count += 1
+
+
+
+# print number 1 to 10 using while loop
+i = 1
+while i <= 10:
+        print(i)
+        i += 1
+# print number 10 to 1 using while loop
+i = 10
+while i >=1:
+        print(i)
+        i -= 1
+
+
+# print My name 5 times using while loop
+a=1
+while a <= 5:
+        print("Abdul-Wassay,Khan")
+        a += 1
+
+# Print Sum of numbers from 10 to 1
+
+i = 10
+while i >=1:
+        print("Sum :",i+i)
+        i -= 1
+
+# Nested Loops in Python
+for i in range(1, 4):  # Outer loop 
+    for j in range(1, 4):  # Inner loop
+        print(f"i: {i}, j: {j}")
+
+# break and continue statements
+for i in range(1, 11):
+    if i == 6:
+        break  # Exit the loop when i is 6
+    print("Break Example - Current number:", i)
+for i in range(1, 11):
+    if i % 2 == 0:
+        continue  # Skip even numbers
+    print("Continue Example - Current number:", i)
+
+
+# defining & calling a function
+def greet(name):
+    print("Hello,", name)
+greet("Wassay")
+def add(a, b):
+    return a + b
+result = add(5, 3)
+print("Sum:", result)
+
+# Function Parameters (positional, keyword, default, *args, **kwargs)
+def describe_person(name, age=30, *hobbies, **attributes):
+    print(f"Name: {name}")
+    print(f"Age: {age}")
+    print("Hobbies:", hobbies)
+    print("Attributes:", attributes)
+describe_person("Alice", 25, "Reading", "Traveling", height=165, weight=60)
+
+# returning multiple values from a function
+def calculate(a, b):
+    sum_result = a + b
+    diff_result = a - b
+    return sum_result, diff_result
+sum_val, diff_val = calculate(10, 5)
+print("Sum:", sum_val)
+print("Difference:", diff_val)
+
+# scope of variables (local and global)
+global_var = "I am a global variable"
+def my_function():
+    local_var = "I am a local variable"
+    print(local_var)
+    print(global_var)
+my_function()
+print(global_var)
+# print(local_var)  # This will raise an error because local_var is not defined globally  
+print ("---------------------------------------------------")
+
+
+
+
+
+
 
 
 
