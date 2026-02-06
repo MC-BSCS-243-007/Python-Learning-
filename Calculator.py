@@ -1,4 +1,4 @@
-# Write a calculator code with scientific calculator operations and get input from users
+#  Write a calculator code with basic calculator operations 
 
 import math
 def add(x, y):
